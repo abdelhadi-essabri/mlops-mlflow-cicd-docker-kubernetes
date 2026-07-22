@@ -1,0 +1,9 @@
+stages:
+  ingest:
+    cmd: python src/ingestion/load_data.py
+    deps:
+      - src/ingestion/load_data.py
+      - data/raw/train_transaction.csv
+      - data/raw/train_identity.csv
+    outs:
+      - data/processed/clean.csv

@@ -1,0 +1,22 @@
+schema: '2.0'
+stages:
+  ingest:
+    cmd: python src/ingestion/load_data.py
+    deps:
+    - path: data/raw/train_identity.csv
+      hash: md5
+      md5: 8487db5001c8bad139f3318d5d3db416
+      size: 26529680
+    - path: data/raw/train_transaction.csv
+      hash: md5
+      md5: 58b4038d8715f5e11007b826bef00ce7
+      size: 683351067
+    - path: src/ingestion/load_data.py
+      hash: md5
+      md5: 3cae0371e908656bc120802ace1e50e9
+      size: 3219
+    outs:
+    - path: data/processed/clean.csv
+      hash: md5
+      md5: e2cc47bcaa6d74425b1ebf76afc1401d
+      size: 719280457
