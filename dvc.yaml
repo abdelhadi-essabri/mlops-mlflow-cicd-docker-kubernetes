@@ -7,3 +7,12 @@ stages:
       - data/raw/train_identity.csv
     outs:
       - data/processed/clean.csv
+
+  train:
+    cmd: python src/training/train.py
+    deps:
+      - src/training/train.py
+      - data/processed/clean.csv
+    metrics:
+      - metrics.json:
+          cache: false
