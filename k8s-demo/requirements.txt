@@ -1,0 +1,11 @@
+dvc 
+mlflow
+pandas
+scikit-learn 
+xgboost 
+optuna 
+great-expectations
+seaborn 
+matplotlib
+fastapi==0.115.0
+uvicorn==0.30.6

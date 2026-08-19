@@ -136,7 +136,11 @@ def main():
         mlflow.log_artifact("feature_importance.csv")
 
         # Modèle
-        mlflow.xgboost.log_model(model, "model")
+        mlflow.xgboost.log_model(
+            model,
+            "model",
+            registered_model_name="fraud-detector"
+        )
 
         # Sauvegarde des métriques pour DVC
         with open("metrics.json", "w") as f:
