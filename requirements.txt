@@ -1,0 +1,9 @@
+dvc 
+mlflow
+pandas
+scikit-learn 
+xgboost 
+optuna 
+great-expectations
+seaborn 
+matplotlib

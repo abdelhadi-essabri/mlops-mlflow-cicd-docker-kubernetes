@@ -1,6 +1,5 @@
 outs:
-- md5: de01c35639931904514cad6eaae8a7a3.dir
+- md5: 8487db5001c8bad139f3318d5d3db416
   size: 26529680
-  nfiles: 1
   hash: md5
   path: train_identity.csv
